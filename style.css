@@ -111,3 +111,34 @@ input {
   color: #fafafa;
   box-shadow: inset 20px 20px 60px #d48f20, inset -20px -20px 60px #ffc12c;
 }
+.other-ways {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.other-ways p {
+  margin-bottom: 0.5rem;
+}
+
+.other-ways a {
+  color: #000;
+  margin: 0 0.3rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.2s ease-in;
+}
+.other-ways i {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+.other-ways a:hover {
+  color: #f9a826;
+}
+.copy-right{
+display: flex;
+justify-content: center;
+margin-top: 100px;
+font-size: .8rem;
+}
