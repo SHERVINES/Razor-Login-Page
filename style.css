@@ -1,54 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffe8cd;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe8cd;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-align-items: center;
-    margin: 1rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 6rem;
 }
-.logo-name{
-    font-size: 2rem;
-    font-weight: bold;
+.logo-name {
+  font-size: 2rem;
+  font-weight: bold;
 }
 .logo-name a {
-    color: #000;
-
+  color: #000;
 }
-.nav{
-    display: flex;
-    text-align: center;
+.nav {
+  display: flex;
+  text-align: center;
 }
 .nav a {
-    color: #111;
-    font-size: 1.1rem;
-    margin: 0 1.5rem;
-    display: flex;
-align-items: center;
+  color: #111;
+  font-size: 1.1rem;
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
 }
 .fa-earth-europe {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-.nav a:hover{
-    color: #686868;
+.nav a:hover {
+  color: #686868;
 }
-.nav a:last-child{
-    padding: .7rem 1.5rem;
-    background: #F9A826;
-    border-radius: 7px;
-    transition: all .2s ease-in;
+.nav a:last-child {
+  padding: 0.7rem 1.5rem;
+  background: #f9a826;
+  border-radius: 7px;
+  transition: all 0.2s ease-in;
 }
-.nav a:last-child:hover{
-    color: #fafafa;
-box-shadow: inset 20px 20px 60px #d48f20,
-            inset -20px -20px 60px #ffc12c;
+.nav a:last-child:hover {
+  color: #fafafa;
+  box-shadow: inset 20px 20px 60px #d48f20, inset -20px -20px 60px #ffc12c;
+}
+.aside-image {
+  background: url(./images/login.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position: left;
+  background-size: contain;
+  margin-left: 4rem;
+}
+.container {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.container .forget-password {
+  color: #000;
+  margin: 0.4rem 0;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.title h1 {
+  margin-bottom: 1rem;
+}
+
+input {
+  margin: 0.3rem 0;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #cccccc;
+  box-shadow: 5px 5px 12px #919191, -9px -9px 12px #ffffff;
+  width: 100%;
+}
+.signin-button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.7rem 2rem;
+  background-color: #f9a826;
+  border-radius: 10px;
+  color: #000;
+  transition: all 0.2s ease-in;
+  text-align: center;
+}
+.signin-button:hover {
+  color: #fafafa;
+  box-shadow: inset 20px 20px 60px #d48f20, inset -20px -20px 60px #ffc12c;
 }
