@@ -51,6 +51,9 @@ header {
   color: #fafafa;
   box-shadow: inset 20px 20px 60px #d48f20, inset -20px -20px 60px #ffc12c;
 }
+.hamburger-manu{
+  display: none;
+}
 .aside-image {
   background: url(./images/login.svg);
   background-repeat: no-repeat;
@@ -150,4 +153,30 @@ input {
   justify-content: center;
   margin-top: 100px;
   font-size: 0.8rem;
+}
+
+@media (max-width:768px) {
+  header{
+    margin: 1rem 2.3rem;
+    width: 80%;
+  }
+  .nav{
+ display: none;
+  }
+  .hamburger-manu{
+    display: block;
+  }
+  .hamburger-manu a {
+    color: #000;
+    font-size: 1.7rem;
+
+  }
+
+  .aside-image   {
+margin: 0 auto;
+  }
+  .copy-right{
+margin-top: 1rem;
+  }
+
 }
