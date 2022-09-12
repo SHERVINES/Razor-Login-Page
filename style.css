@@ -51,7 +51,7 @@ header {
   color: #fafafa;
   box-shadow: inset 20px 20px 60px #d48f20, inset -20px -20px 60px #ffc12c;
 }
-.hamburger-manu{
+.hamburger-manu {
   display: none;
 }
 .aside-image {
@@ -99,6 +99,15 @@ input {
   background: #cccccc;
   box-shadow: 5px 5px 12px #919191, -9px -9px 12px #ffffff;
   width: 100%;
+}
+.username-msg,
+.password-msg {
+  color: #ff0000;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.signin-status {
+  color: #00c410;
 }
 .signin-button {
   width: 100%;
@@ -151,32 +160,30 @@ input {
 .copy-right {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 0.8rem;
 }
 
-@media (max-width:768px) {
-  header{
+@media (max-width: 768px) {
+  header {
     margin: 1rem 2.3rem;
     width: 80%;
   }
-  .nav{
- display: none;
+  .nav {
+    display: none;
   }
-  .hamburger-manu{
+  .hamburger-manu {
     display: block;
   }
   .hamburger-manu a {
     color: #000;
     font-size: 1.7rem;
-
   }
 
-  .aside-image   {
-margin: 0 auto;
+  .aside-image {
+    margin: 0 auto;
   }
-  .copy-right{
-margin-top: 1rem;
+  .copy-right {
+    margin-top: 1rem;
   }
-
 }
