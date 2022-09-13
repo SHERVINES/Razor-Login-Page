@@ -14,11 +14,9 @@ function signIn(event) {
   let emailInput = email.value;
   let passwordInput = password.value;
   let ifSendData = true;
-  if (
-    emailInput.length === 0 ||
-    emailInput.indexOf("@") === -1 ||
-    emailInput.indexOf(".") === -1
-  ) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+    let ifSendData = true;
+  } else {
     usernameMsg.innerHTML = "Please enter a valid email*";
     ifSendData = false;
   }
@@ -39,9 +37,10 @@ function signIn(event) {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
-    })
-      .then((response) => {if(response.ok){
-        signinStatus.innerHTML = "You signed in succsessfully"
-      }});
+    }).then((response) => {
+      if (response.ok) {
+        signinStatus.innerHTML = "You signed in succsessfully";
+      }
+    });
   }
 }
